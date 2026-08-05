@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Esther Liu / 劉育均 — Software Engineer & CS student portfolio" />
+    <title>Esther Liu · 劉育均</title>
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem("portfolio-theme");
+          if (!t) t = matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+          document.documentElement.setAttribute("data-theme", t);
+          var l = localStorage.getItem("portfolio-lang") || "zh";
+          document.documentElement.setAttribute("lang", l === "en" ? "en" : "zh-Hant");
+        } catch (e) {}
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Source+Serif+4:opsz,ital,wght@8..60,0,400;8..60,0,600;8..60,1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main" data-i18n="skip">跳至主要內容</a>
+
+    <header class="site-header">
+      <a class="logo" href="#top" aria-label="Esther Liu">
+        <span class="logo-mark">EL</span>
+        <span class="logo-text">Esther Liu</span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="#about" data-i18n="nav.about">關於</a>
+        <a href="#experience" data-i18n="nav.experience">經歷</a>
+        <a href="#projects" data-i18n="nav.projects">專案</a>
+        <a href="#education" data-i18n="nav.education">學歷</a>
+        <a href="#contact" data-i18n="nav.contact">聯絡</a>
+      </nav>
+      <div class="controls">
+        <button type="button" class="control-btn" id="lang-toggle" aria-label="Switch language">
+          EN
+        </button>
+        <button type="button" class="control-btn" id="theme-toggle" aria-label="Toggle theme">
+          <span class="theme-icon" aria-hidden="true"></span>
+        </button>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top">
+        <div class="hero-copy">
+          <p class="hero-brand">Esther Liu · 劉育均</p>
+          <h1 data-i18n="hero.title">用程式把想法做成可用的產品</h1>
+          <p class="hero-lead" data-i18n="hero.lead">
+            軟體工程師／資訊工程學生。網站與內部系統開發、從 0 到 1 的專案經驗，以及清楚溝通的協作方式。
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects" data-i18n="hero.ctaPrimary">查看專案</a>
+            <a class="btn btn-ghost" href="#contact" data-i18n="hero.ctaSecondary">聯絡我</a>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <!-- Replace assets/portrait.jpg when ready -->
+          <div class="portrait-frame" id="portrait">
+            <img
+              src="assets/portrait.jpg"
+              alt=""
+              width="720"
+              height="900"
+              onerror="this.remove(); document.getElementById('portrait').classList.add('is-empty')"
+            />
+            <div class="portrait-placeholder">
+              <span data-i18n="hero.photoHint">照片稍後放這裡</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="section-head">
+          <p class="eyebrow" data-i18n="about.eyebrow">關於我</p>
+          <h2 data-i18n="about.title">把需求做成穩定、可維護的系統</h2>
+        </div>
+        <p class="prose" data-i18n="about.body">
+          我有一年多軟體開發實習與正職經驗，熟悉 Python、PHP、Vue.js、WordPress，也做過網站開發、功能設計、系統測試、文件撰寫與 Docker 部署。喜歡把模糊需求拆清楚，再和團隊一起把功能穩穩交出去。
+        </p>
+        <ul class="skill-list" aria-label="Skills">
+          <li>
+            <strong data-i18n="skills.langTitle">程式語言</strong>
+            <span data-i18n="skills.langBody">Python、PHP、C、MySQL</span>
+          </li>
+          <li>
+            <strong data-i18n="skills.webTitle">網頁開發</strong>
+            <span data-i18n="skills.webBody">Vue.js、WordPress、響應式網頁</span>
+          </li>
+          <li>
+            <strong data-i18n="skills.toolTitle">工具與流程</strong>
+            <span data-i18n="skills.toolBody">Git、Jira、Docker、AI Agent 輔助開發</span>
+          </li>
+          <li>
+            <strong data-i18n="skills.methodTitle">開發方法</strong>
+            <span data-i18n="skills.methodBody">敏捷開發、完整軟體生命週期</span>
+          </li>
+        </ul>
+      </section>
+
+      <section class="section" id="experience">
+        <div class="section-head">
+          <p class="eyebrow" data-i18n="experience.eyebrow">經歷</p>
+          <h2 data-i18n="experience.title">工作與教學經驗</h2>
+        </div>
+        <ol class="timeline">
+          <li class="timeline-item">
+            <div class="timeline-meta">
+              <time data-i18n="exp1.dates">2024-09 — 現在</time>
+              <span data-i18n="exp1.org">嘉泰興股份有限公司 · JTX Corporation</span>
+            </div>
+            <h3 data-i18n="exp1.role">軟體工程師</h3>
+            <ul>
+              <li data-i18n="exp1.b1">參與企業官網與 5+ 項內部系統開發維護，使用 WordPress、PHP、Python、Vue.js 完成前後端功能。</li>
+              <li data-i18n="exp1.b2">以 Docker 建立一致化開發環境，協助部署、測試與版本管理。</li>
+              <li data-i18n="exp1.b3">與同事共同完成 LMS（Label Management System）從需求分析到部署，縮短標籤列印時間至少一半。</li>
+              <li data-i18n="exp1.b4">負責測試、Bug 修復與功能優化，並配合專案時程與跨部門溝通完成交付。</li>
+            </ul>
+          </li>
+          <li class="timeline-item">
+            <div class="timeline-meta">
+              <time data-i18n="exp2.dates">2026-01 — 2026-02</time>
+              <span data-i18n="exp2.org">艾思程式教育股份有限公司</span>
+            </div>
+            <h3 data-i18n="exp2.role">講師</h3>
+            <ul>
+              <li data-i18n="exp2.b1">依教材備課，透過 OSEP Scratch 擴充套件設計實作活動，帶領學員完成遊戲與 AI 視覺辨識專題。</li>
+              <li data-i18n="exp2.b2">以互動教學、分段示範與個別除錯指導，協助學員認識 AI 並解決程式問題。</li>
+            </ul>
+          </li>
+        </ol>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="section-head">
+          <p class="eyebrow" data-i18n="projects.eyebrow">專案</p>
+          <h2 data-i18n="projects.title">做過的專題與系統</h2>
+        </div>
+        <div class="project-list">
+          <article class="project">
+            <p class="project-tag" data-i18n="p1.tag">內部系統 · 0→1</p>
+            <h3 data-i18n="p1.title">LMS · Label Management System</h3>
+            <p data-i18n="p1.body">
+              與一位同事共同完成標籤管理系統：需求分析、系統設計、開發、測試到部署。實際減少傳統列印標籤至少一半的時間。
+            </p>
+            <p class="project-stack">Python · Vue.js · Docker</p>
+          </article>
+          <article class="project">
+            <p class="project-tag" data-i18n="p2.tag">產品與維運</p>
+            <h3 data-i18n="p2.title">企業官網與內部系統</h3>
+            <p data-i18n="p2.body">
+              參與官方網站與多套內部系統的功能開發、測試與維護，涵蓋前後端實作、Bug 修復與穩定性優化。
+            </p>
+            <p class="project-stack">WordPress · PHP · Vue.js · Python</p>
+          </article>
+          <article class="project">
+            <p class="project-tag" data-i18n="p3.tag">活動策劃</p>
+            <h3 data-i18n="p3.title">師大資工高中生夏令營</h3>
+            <p data-i18n="p3.body">
+              擔任總籌股成員，規劃並組織為期四天的活動，協調流程、後勤與日程，確保活動順利完成。
+            </p>
+            <p class="project-stack" data-i18n="p3.stack">活動企劃 · 團隊協調</p>
+          </article>
+        </div>
+        <p class="projects-note" data-i18n="projects.note">更多專題與作品之後會陸續補上。</p>
+      </section>
+
+      <section class="section" id="education">
+        <div class="section-head">
+          <p class="eyebrow" data-i18n="education.eyebrow">學歷</p>
+          <h2 data-i18n="education.title">學習背景</h2>
+        </div>
+        <div class="edu-block">
+          <div class="edu-meta">
+            <time data-i18n="edu.dates">2023-09 — 2027-06</time>
+            <p class="edu-gpa" data-i18n="edu.gpa">GPA 3.825 / 4.3</p>
+          </div>
+          <h3 data-i18n="edu.school">國立臺灣師範大學</h3>
+          <p data-i18n="edu.degree">資訊工程學系 學士</p>
+          <p class="edu-extra" data-i18n="edu.extra">語言：中文（母語）· 英文 TOEIC 850</p>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact">
+        <div class="section-head">
+          <p class="eyebrow" data-i18n="contact.eyebrow">聯絡</p>
+          <h2 data-i18n="contact.title">一起聊聊專案或機會</h2>
+        </div>
+        <p class="prose" data-i18n="contact.body">歡迎透過 Email 或 GitHub 與我聯繫。</p>
+        <div class="contact-links">
+          <a href="mailto:liucherry1223@gmail.com">liucherry1223@gmail.com</a>
+          <a href="https://github.com/Esther1223" target="_blank" rel="noopener noreferrer">github.com/Esther1223</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Esther Liu · 劉育均</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
