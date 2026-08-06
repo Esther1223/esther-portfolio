@@ -1,48 +1,55 @@
 # Esther Liu · Portfolio
 
-個人作品集網站（中英雙語、淺色／深色主題），內容依履歷初始化，可部署到 GitHub Pages。
+> Designing thoughtful software with AI, code, and curiosity.
 
-## 本機預覽
+Soft Tech 風格個人網站（Vue 3 + Vite）：中英雙語、淺／深色主題、產品官網感作品集。
 
-用瀏覽器直接開啟 `index.html`，或在專案目錄執行：
+## 本機開發
 
 ```bash
-npx --yes serve .
+npm install
+npm run dev
 ```
 
-## 放照片
+## 建置
 
-1. 把照片命名為 `portrait.jpg`
-2. 放到 `assets/portrait.jpg`
-3. 建議直式、臉部清楚、光線自然的生活照即可（不一定要棚拍證件照）
-
-目前沒有照片時，右側會顯示佔位區塊。
+```bash
+npm run build
+npm run preview
+```
 
 ## 部署到 GitHub Pages
 
-1. 在 GitHub 建立 repo（例如 `esther-portfolio`）
-2. 推送這個專案：
+已設定 `base: '/esther-portfolio/'`。
 
 ```bash
-git add .
-git commit -m "Initial portfolio site"
-git branch -M main
-git remote add origin https://github.com/Esther1223/esther-portfolio.git
-git push -u origin main
+npm run deploy
 ```
 
-3. GitHub → **Settings** → **Pages**
-4. Source 選 **Deploy from a branch**
-5. Branch 選 `main`，資料夾選 `/ (root)` → Save
+或手動：GitHub → Settings → Pages → 部署 `gh-pages` branch（`deploy` script 會建立）。
 
-幾分鐘後可開啟：
+網站網址：
 
 `https://Esther1223.github.io/esther-portfolio/`
 
-若 repo 名稱改成 `Esther1223.github.io`，網址會是 `https://Esther1223.github.io/`。
+## 放照片
 
-## 之後可改的地方
+把直式生活照放到：
 
-- `index.html` / `js/main.js`：經歷、專案、中英文字
-- `css/styles.css`：配色與版面
-- `assets/`：照片與其他素材
+```text
+public/portrait.jpg
+```
+
+## 改內容
+
+主要文字與專案在：
+
+```text
+src/data/content.js
+```
+
+## 品牌方向
+
+- Human-centered Software Engineer
+- Midnight Purple Soft Tech（柔和紫藍粉 glow，不是賽博龐克）
+- Apple × Linear × Notion 留白與質感
