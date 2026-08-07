@@ -19,8 +19,8 @@ export const copy = {
       en: 'I enjoy turning complex problems into simple and useful software.',
     },
     roles: {
-      zh: '軟體工程師 · 企業系統 / 網站 / AI · 教學',
-      en: 'Software Engineer · Systems / Web / AI · Teaching',
+      zh: '軟體工程師 · 企業系統 / 網站 · AI 協作開發 · 教學',
+      en: 'Software Engineer · Systems / Web · AI-assisted building · Teaching',
     },
     cta: { zh: '看看作品', en: 'See my work' },
     photo: { zh: '照片稍後放這裡', en: 'Photo coming soon' },
@@ -32,8 +32,8 @@ export const copy = {
       en: 'I use technology to solve real problems',
     },
     body: {
-      zh: '我喜歡把複雜的需求拆解成簡單、容易使用的系統。無論是企業內部工具、網站，或是 AI 應用，我都希望做出真正能解決問題的產品。除了功能完成之外，我也很重視使用流程是否直覺，以及程式是否容易維護。',
-      en: 'I like breaking complex requirements into simple, easy-to-use systems. Whether it is an internal tool, a website, or an AI application, I hope to build products that actually solve problems. Beyond shipping features, I care about whether the flow feels intuitive—and whether the code is easy to maintain.',
+      zh: '我喜歡把複雜的需求拆解成簡單、容易使用的系統。無論是企業內部工具、網站，或是各種應用，我都希望做出真正能解決問題的產品。除了功能完成之外，我也很重視使用流程是否直覺，以及程式是否容易維護。',
+      en: 'I like breaking complex requirements into simple, easy-to-use systems. Whether it is an internal tool, a website, or any applications, I hope to build products that actually solve problems. Beyond shipping features, I care about whether the flow feels intuitive—and whether the code is easy to maintain.',
     },
     traitsTitle: { zh: '我在意的事', en: 'What I care about' },
     traits: [
@@ -54,8 +54,8 @@ export const copy = {
         zh: '持續學習',
         en: 'Continuous learning',
         desc: {
-          zh: '最近投入 AI、Agent 與產品開發。',
-          en: 'Recently focusing on AI, agents, and product development.',
+          zh: '透過 AI 協作，把系統或小東西做出來。',
+          en: 'I collaborate with AI to build systems—and small things.',
         },
       },
       {
@@ -70,7 +70,7 @@ export const copy = {
     journeyTitle: { zh: '到現在為止', en: 'How I got here' },
     journey: [
       { year: '2023', label: { zh: '進入師大資工', en: 'Started NTNU CS' } },
-      { year: '2024', label: { zh: '開始當軟體工程師', en: 'Became a software engineer' } },
+      { year: '2024', label: { zh: '開始接觸軟體開發 ', en: 'Started software development' } },
       { year: '2025', label: { zh: '開始做 WMS 與企業官網', en: 'Started WMS and company website' } },
       { year: '2026', label: { zh: '完成 LMS 系統', en: 'Shipped the LMS system' } },
       { year: 'Now', label: { zh: '持續學習、持續做', en: 'Keep learning. Keep building.' } },
@@ -193,15 +193,15 @@ export const copy = {
     groups: [
       {
         title: { zh: 'Frontend', en: 'Frontend' },
-        items: ['Vue', 'JavaScript', 'WordPress', 'Responsive UI'],
+        items: ['Vue', 'WordPress', 'Responsive UI'],
       },
       {
         title: { zh: 'Backend', en: 'Backend' },
         items: ['Python', 'PHP', 'MySQL', 'PostgreSQL'],
       },
       {
-        title: { zh: 'AI', en: 'AI' },
-        items: ['YOLO', 'OpenCV', 'Gemini', 'AI Agents'],
+        title: { zh: 'AI 協作', en: 'AI Collaboration' },
+        items: ['Cursor', 'ChatGPT', 'AI Agents'],
       },
       {
         title: { zh: 'Workflow', en: 'Workflow' },
@@ -262,8 +262,8 @@ export const copy = {
       en: "Let's chat",
     },
     body: {
-      zh: '如果你對我的作品有興趣，或想聊聊軟體開發、AI、合作機會，都歡迎和我聯絡。',
-      en: 'If you are interested in my work, or want to talk about software development, AI, or collaboration opportunities, feel free to reach out.',
+      zh: '如果你對我的作品有興趣，或想聊聊軟體開發、用 AI 一起做東西、合作機會，都歡迎和我聯絡。',
+      en: 'If you are interested in my work, or want to talk about software development, building with AI, or collaboration opportunities, feel free to reach out.',
     },
   },
   footer: {
