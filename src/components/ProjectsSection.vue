@@ -24,6 +24,7 @@ const actionLabels = {
           class="card"
           :class="{ accent: project.accent }"
         >
+          <p class="period">{{ project.period[lang] }}</p>
           <p class="subtitle">{{ project.subtitle[lang] }}</p>
           <h3>{{ project.name[lang] }}</h3>
           <p class="body">{{ project.body[lang] }}</p>
@@ -85,6 +86,14 @@ const actionLabels = {
   background:
     linear-gradient(135deg, rgba(124, 92, 255, 0.08), rgba(90, 169, 255, 0.05)),
     var(--card);
+}
+
+.period {
+  margin: 0 0 0.35rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--muted);
+  letter-spacing: 0.02em;
 }
 
 .subtitle {

@@ -10,6 +10,7 @@ const { t, lang } = useI18n()
     <div class="wrap reveal">
       <p class="eyebrow">{{ t(copy.stack.eyebrow) }}</p>
       <h2 class="section-title">{{ t(copy.stack.title) }}</h2>
+      <p class="section-lead">{{ t(copy.stack.lead) }}</p>
 
       <div class="groups">
         <div v-for="group in copy.stack.groups" :key="group.title.en" class="group">

@@ -3,10 +3,11 @@ import { onMounted } from 'vue'
 import SiteHeader from './components/SiteHeader.vue'
 import HeroSection from './components/HeroSection.vue'
 import AboutSection from './components/AboutSection.vue'
-import ExperienceSection from './components/ExperienceSection.vue'
 import ProjectsSection from './components/ProjectsSection.vue'
+import ExperienceSection from './components/ExperienceSection.vue'
 import TechStackSection from './components/TechStackSection.vue'
-import TeachingSection from './components/TeachingSection.vue'
+import EducationSection from './components/EducationSection.vue'
+import BeyondSection from './components/BeyondSection.vue'
 import ContactSection from './components/ContactSection.vue'
 import SiteFooter from './components/SiteFooter.vue'
 
@@ -37,10 +38,11 @@ onMounted(() => {
   <main id="main">
     <HeroSection />
     <AboutSection />
-    <ExperienceSection />
     <ProjectsSection />
+    <ExperienceSection />
     <TechStackSection />
-    <TeachingSection />
+    <EducationSection />
+    <BeyondSection />
     <ContactSection />
   </main>
   <SiteFooter />

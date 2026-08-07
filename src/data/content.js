@@ -1,65 +1,151 @@
 export const copy = {
   nav: {
     about: { zh: '關於', en: 'About' },
-    experience: { zh: '經歷', en: 'Experience' },
     projects: { zh: '專案', en: 'Projects' },
-    stack: { zh: '技術', en: 'Stack' },
-    teaching: { zh: '教學', en: 'Teaching' },
+    experience: { zh: '經歷', en: 'Experience' },
+    stack: { zh: '技術', en: 'Skills' },
+    education: { zh: '學歷', en: 'Education' },
+    beyond: { zh: '更多', en: 'Beyond' },
     contact: { zh: '聯絡', en: 'Contact' },
   },
   hero: {
     greeting: { zh: '嗨，我是 Esther。', en: "Hi, I'm Esther." },
     title: {
-      zh: '打造讓人真正想用的 AI 產品。',
-      en: 'I build AI-powered software that people enjoy using.',
+      zh: '喜歡把想法做成真正能使用的產品。',
+      en: 'I enjoy turning ideas into products people can actually use.',
     },
     lead: {
-      zh: 'Designing thoughtful software with AI, code, and curiosity.',
-      en: 'Designing thoughtful software with AI, code, and curiosity.',
+      zh: '我喜歡把複雜的問題，一步一步變成簡單好用的系統。',
+      en: 'I enjoy turning complex problems into simple and useful software.',
     },
     roles: {
-      zh: 'Software Engineer · AI Enthusiast · Educator',
-      en: 'Software Engineer · AI Enthusiast · Educator',
+      zh: '軟體工程師 · 企業系統 / 網站 / AI · 教學',
+      en: 'Software Engineer · Systems / Web / AI · Teaching',
     },
-    cta: { zh: '探索作品', en: 'Explore my work' },
+    cta: { zh: '看看作品', en: 'See my work' },
     photo: { zh: '照片稍後放這裡', en: 'Photo coming soon' },
   },
   about: {
     eyebrow: { zh: 'About', en: 'About' },
     title: {
-      zh: '用技術解決人的問題',
-      en: 'I use technology to solve human problems',
+      zh: '用技術解決實際的問題',
+      en: 'I use technology to solve real problems',
     },
     body: {
-      zh: '我喜歡把複雜的問題拆解成容易使用的產品。無論是企業內部系統、AI 工具，還是教學平台，我都希望技術能真正幫助使用者——不只是功能做完，而是用起來舒服、說得清楚、願意再回來用。',
-      en: 'I like turning complex problems into products people can actually use. Whether it is an internal system, an AI tool, or a teaching platform, I care about more than shipping features—I care that it feels clear, useful, and worth coming back to.',
+      zh: '我喜歡把複雜的需求拆解成簡單、容易使用的系統。無論是企業內部工具、網站，或是 AI 應用，我都希望做出真正能解決問題的產品。除了功能完成之外，我也很重視使用流程是否直覺，以及程式是否容易維護。',
+      en: 'I like breaking complex requirements into simple, easy-to-use systems. Whether it is an internal tool, a website, or an AI application, I hope to build products that actually solve problems. Beyond shipping features, I care about whether the flow feels intuitive—and whether the code is easy to maintain.',
     },
+    traitsTitle: { zh: '我在意的事', en: 'What I care about' },
     traits: [
       {
-        zh: 'Thoughtful',
-        en: 'Thoughtful',
-        desc: { zh: '先想清楚再用程式表達', en: 'Think first, then express it in code' },
+        zh: '使用者體驗',
+        en: 'User experience',
+        desc: { zh: '不是漂亮，而是好用。', en: 'Not about looking pretty—about being easy to use.' },
       },
       {
-        zh: 'Approachable',
-        en: 'Approachable',
-        desc: { zh: '溝通清楚，好協作', en: 'Clear communication, easy collaboration' },
+        zh: '清楚的程式架構',
+        en: 'Clear code structure',
+        desc: {
+          zh: '讓功能容易擴充與維護。',
+          en: 'So features are easy to extend and maintain.',
+        },
       },
       {
-        zh: 'Creative',
-        en: 'Creative',
-        desc: { zh: '在意體驗與細節', en: 'Obsessed with experience and details' },
+        zh: '持續學習',
+        en: 'Continuous learning',
+        desc: {
+          zh: '最近投入 AI、Agent 與產品開發。',
+          en: 'Recently focusing on AI, agents, and product development.',
+        },
       },
       {
-        zh: 'Curious',
-        en: 'Curious',
-        desc: { zh: '持續探索 AI 與新工具', en: 'Always exploring AI and new tools' },
+        zh: '團隊合作',
+        en: 'Collaboration',
+        desc: {
+          zh: '喜歡一起討論，把想法做出來。',
+          en: 'I enjoy discussing ideas together and building them out.',
+        },
+      },
+    ],
+    journeyTitle: { zh: '到現在為止', en: 'How I got here' },
+    journey: [
+      { year: '2023', label: { zh: '進入師大資工', en: 'Started NTNU CS' } },
+      { year: '2024', label: { zh: '開始當軟體工程師', en: 'Became a software engineer' } },
+      { year: '2025', label: { zh: '開始做 WMS 與企業官網', en: 'Started WMS and company website' } },
+      { year: '2026', label: { zh: '完成 LMS 系統', en: 'Shipped the LMS system' } },
+      { year: 'Now', label: { zh: '持續學習、持續做', en: 'Keep learning. Keep building.' } },
+    ],
+  },
+  projects: {
+    eyebrow: { zh: 'Featured Projects', en: 'Featured Projects' },
+    title: { zh: '代表作品', en: 'Projects I want to share' },
+    note: {
+      zh: '更多作品與 Demo 連結會陸續補上。',
+      en: 'More demos and case studies coming soon.',
+    },
+    items: [
+      {
+        accent: true,
+        name: { zh: 'WMS 倉儲管理系統', en: 'WMS · Warehouse Management' },
+        period: { zh: '2025 — 現在', en: '2025 — Present' },
+        subtitle: {
+          zh: 'Warehouse Management System',
+          en: 'Warehouse Management System',
+        },
+        body: {
+          zh: '企業內部倉儲系統：涵蓋入庫、出庫、揀貨、標籤與 ERP 串接。從 2025 做到現在，持續依現場需求調整流程，讓倉庫作業更順。',
+          en: 'An internal warehouse system covering inbound, outbound, picking, labels, and ERP integration. I have been building and iterating on it since 2025 to fit real warehouse workflows.',
+        },
+        stack: ['Vue.js', 'PHP', 'Docker'],
+        tags: {
+          zh: ['倉儲流程', '前後端', '持續維運'],
+          en: ['Warehouse flow', 'Full-stack', 'Ongoing'],
+        },
+        links: { demo: null, github: null, case: null },
+      },
+      {
+        accent: true,
+        name: { zh: 'LMS 標籤管理系統', en: 'LMS · Label Management' },
+        period: { zh: '2026', en: '2026' },
+        subtitle: {
+          zh: 'Label Management System',
+          en: 'Label Management System',
+        },
+        body: {
+          zh: '企業內部 0→1 系統：從需求、設計、開發、測試到部署，實際減少列印標籤時間至少一半。',
+          en: 'An internal 0→1 system from requirements to deployment that cut label printing time by at least half.',
+        },
+        stack: ['Python', 'Vue.js', 'Docker'],
+        tags: {
+          zh: ['需求分析', '全端開發', '部署上線'],
+          en: ['Requirements', 'Full-stack', 'Production'],
+        },
+        links: { demo: null, github: null, case: null },
+      },
+      {
+        accent: false,
+        name: { zh: '企業官網', en: 'Company Website' },
+        period: { zh: '2025 — 現在', en: '2025 — Present' },
+        subtitle: {
+          zh: 'Corporate Website',
+          en: 'Corporate Website',
+        },
+        body: {
+          zh: '從 2025 至今持續開發與維護公司官網，處理頁面、功能調整與使用體驗，讓對外呈現更穩定清楚。',
+          en: 'I have been building and maintaining the company website since 2025—pages, feature updates, and UX—so the public site stays clear and reliable.',
+        },
+        stack: ['WordPress', 'PHP', 'JavaScript'],
+        tags: {
+          zh: ['網站開發', '內容維護', '體驗優化'],
+          en: ['Web development', 'Content updates', 'UX polish'],
+        },
+        links: { demo: null, github: null, case: null },
       },
     ],
   },
   experience: {
     eyebrow: { zh: 'Experience', en: 'Experience' },
-    title: { zh: '從產品到教學的實戰經驗', en: 'From products to teaching' },
+    title: { zh: '工作與實戰經驗', en: 'Where I built these skills' },
     items: [
       {
         dates: { zh: '2024-09 — 現在', en: 'Sep 2024 — Present' },
@@ -67,16 +153,16 @@ export const copy = {
         role: { zh: '軟體工程師', en: 'Software Engineer' },
         points: [
           {
-            zh: '參與企業官網與 5+ 項內部系統開發維護，使用 WordPress、PHP、Python、Vue.js。',
-            en: 'Built and maintained the company website and 5+ internal systems with WordPress, PHP, Python, and Vue.js.',
+            zh: '從 2025 起參與 WMS 倉儲管理系統與企業官網開發維護；2026 與同事完成 LMS 標籤管理系統。',
+            en: 'Since 2025, built and maintained WMS and the company website; in 2026, co-built the LMS label management system.',
           },
           {
             zh: '以 Docker 建立一致化開發環境，協助部署、測試與版本管理。',
             en: 'Set up consistent Docker environments for deployment, testing, and version control.',
           },
           {
-            zh: '與同事共同完成 LMS 從需求分析到部署，縮短標籤列印時間至少一半。',
-            en: 'Co-built LMS end-to-end, reducing label printing time by at least half.',
+            zh: 'LMS 從需求分析到部署，實際縮短標籤列印時間至少一半。',
+            en: 'Took LMS from requirements to deployment, cutting label printing time by at least half.',
           },
         ],
       },
@@ -97,73 +183,13 @@ export const copy = {
       },
     ],
   },
-  projects: {
-    eyebrow: { zh: 'Selected Projects', en: 'Selected Projects' },
-    title: { zh: '真正有人會用的產品', en: 'Products people actually use' },
-    note: {
-      zh: '更多作品與 Demo 連結會陸續補上。',
-      en: 'More demos and case studies coming soon.',
-    },
-    items: [
-      {
-        accent: true,
-        name: { zh: '智慧午餐', en: 'Smart Lunch' },
-        subtitle: {
-          zh: 'Lunch Ordering Platform',
-          en: 'Lunch Ordering Platform',
-        },
-        body: {
-          zh: '讓訂餐、投票與管理更直覺的午餐平台——把日常流程做成真正能運作的產品。',
-          en: 'A lunch platform that makes ordering, voting, and admin workflows simpler—built as a real product, not just a homework demo.',
-        },
-        stack: ['Python', 'Vue', 'PostgreSQL'],
-        tags: {
-          zh: ['投票系統', '後台管理', '數據分析'],
-          en: ['Voting System', 'Admin Dashboard', 'Analytics'],
-        },
-        links: { demo: null, github: null, case: null },
-      },
-      {
-        accent: true,
-        name: { zh: 'LMS 標籤管理系統', en: 'LMS · Label Management' },
-        subtitle: {
-          zh: 'Label Management System',
-          en: 'Label Management System',
-        },
-        body: {
-          zh: '企業內部 0→1 系統：從需求、設計、開發、測試到部署，實際減少列印標籤時間至少一半。',
-          en: 'An internal 0→1 system from requirements to deployment that cut label printing time by at least half.',
-        },
-        stack: ['Python', 'Vue.js', 'Docker'],
-        tags: {
-          zh: ['需求分析', '全端開發', '部署上線'],
-          en: ['Requirements', 'Full-stack', 'Production'],
-        },
-        links: { demo: null, github: null, case: null },
-      },
-      {
-        accent: false,
-        name: { zh: '企業官網與內部系統', en: 'Website & Internal Systems' },
-        subtitle: {
-          zh: 'Product & Operations',
-          en: 'Product & Operations',
-        },
-        body: {
-          zh: '參與官方網站與多套內部系統的功能開發、測試與維運，關注穩定度與使用體驗。',
-          en: 'Feature development, testing, and maintenance across the official site and multiple internal systems.',
-        },
-        stack: ['WordPress', 'PHP', 'Vue.js', 'Python'],
-        tags: {
-          zh: ['前後端', 'Bug 修復', '體驗優化'],
-          en: ['Full-stack', 'Bug fixes', 'UX polish'],
-        },
-        links: { demo: null, github: null, case: null },
-      },
-    ],
-  },
   stack: {
-    eyebrow: { zh: 'Tech Stack', en: 'Tech Stack' },
-    title: { zh: '我常用的工具箱', en: 'Tools I work with' },
+    eyebrow: { zh: 'Skills', en: 'Skills' },
+    title: { zh: '我常用的工具', en: 'Tools I work with' },
+    lead: {
+      zh: '我沒有追求會最多技術，而是選擇適合問題的工具。',
+      en: 'I do not chase the longest tech list—I choose tools that fit the problem.',
+    },
     groups: [
       {
         title: { zh: 'Frontend', en: 'Frontend' },
@@ -183,15 +209,36 @@ export const copy = {
       },
     ],
   },
-  teaching: {
-    eyebrow: { zh: 'Teaching', en: 'Teaching' },
-    title: { zh: '喜歡把知識講清楚', en: 'I enjoy making knowledge click' },
+  education: {
+    eyebrow: { zh: 'Education', en: 'Education' },
+    title: { zh: '學歷', en: 'Education' },
+    school: {
+      zh: '國立臺灣師範大學',
+      en: 'National Taiwan Normal University',
+    },
+    dept: {
+      zh: '資訊工程學系',
+      en: 'Computer Science & Information Engineering',
+    },
+    years: { zh: '2023 — 2027', en: '2023 — 2027' },
+    meta: [
+      { zh: 'GPA 3.825 / 4.3', en: 'GPA 3.825 / 4.3' },
+      { zh: 'TOEIC 850', en: 'TOEIC 850' },
+    ],
+  },
+  beyond: {
+    eyebrow: { zh: 'Beyond Engineering', en: 'Beyond Engineering' },
+    title: {
+      zh: '寫程式之外，我也喜歡帶人與分享',
+      en: 'Beyond code: teaching, leading, and sharing',
+    },
     body: {
-      zh: '教學對我來說不是附帶興趣，而是另一種產品思維：怎麼拆步驟、怎麼示範、怎麼讓對方真正上手。',
-      en: 'Teaching is not a side interest—it is another form of product thinking: how to break steps down, demonstrate clearly, and help someone actually get it.',
+      zh: '除了寫程式，我也常透過教學、營隊與跨組合作，練習怎麼把事情講清楚、帶大家一起完成。',
+      en: 'Besides coding, I practice explaining clearly and getting things done with people—through teaching, camps, and cross-team work.',
     },
     items: [
       {
+        label: { zh: 'Teaching', en: 'Teaching' },
         title: { zh: 'Scratch / AI 視覺辨識講師', en: 'Scratch / AI Vision Instructor' },
         desc: {
           zh: '帶領學員完成遊戲與 AI 視覺辨識專題，並個別協助除錯。',
@@ -199,6 +246,7 @@ export const copy = {
         },
       },
       {
+        label: { zh: 'Leadership', en: 'Leadership' },
         title: { zh: '師大資工高中生夏令營總籌', en: 'NTNU CS Summer Camp Organizer' },
         desc: {
           zh: '規劃四天活動流程、後勤與日程，協調跨組團隊並即時處理現場問題。',
@@ -207,28 +255,21 @@ export const copy = {
       },
     ],
   },
-  education: {
-    school: {
-      zh: '國立臺灣師範大學 · 資訊工程學系',
-      en: 'NTNU · Computer Science & Information Engineering',
-    },
-    meta: { zh: '2023 — 2027 · GPA 3.825 / 4.3 · TOEIC 850', en: '2023 — 2027 · GPA 3.825 / 4.3 · TOEIC 850' },
-  },
   contact: {
     eyebrow: { zh: 'Contact', en: 'Contact' },
     title: {
-      zh: '一起打造下一個有人會用的產品',
-      en: "Let's build something people will actually use",
+      zh: '歡迎和我聊聊',
+      en: "Let's chat",
     },
     body: {
-      zh: '歡迎聊聊實習、合作、AI 專案，或任何想讓技術更有溫度的想法。',
-      en: 'Open to chats about roles, collaboration, AI projects, or anything that makes tech more human.',
+      zh: '如果你對我的作品有興趣，或想聊聊軟體開發、AI、合作機會，都歡迎和我聯絡。',
+      en: 'If you are interested in my work, or want to talk about software development, AI, or collaboration opportunities, feel free to reach out.',
     },
   },
   footer: {
     note: {
-      zh: 'Human-centered Software Engineer',
-      en: 'Human-centered Software Engineer',
+      zh: '持續學習，持續打造有價值的產品。',
+      en: 'Keep learning. Keep building.',
     },
   },
 }

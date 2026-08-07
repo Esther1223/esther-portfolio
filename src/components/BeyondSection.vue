@@ -6,14 +6,15 @@ const { t, lang } = useI18n()
 </script>
 
 <template>
-  <section class="section" id="teaching">
+  <section class="section" id="beyond">
     <div class="wrap reveal">
-      <p class="eyebrow">{{ t(copy.teaching.eyebrow) }}</p>
-      <h2 class="section-title">{{ t(copy.teaching.title) }}</h2>
-      <p class="section-lead">{{ t(copy.teaching.body) }}</p>
+      <p class="eyebrow">{{ t(copy.beyond.eyebrow) }}</p>
+      <h2 class="section-title">{{ t(copy.beyond.title) }}</h2>
+      <p class="section-lead">{{ t(copy.beyond.body) }}</p>
 
       <div class="items">
-        <article v-for="(item, i) in copy.teaching.items" :key="i">
+        <article v-for="(item, i) in copy.beyond.items" :key="i">
+          <p class="label">{{ item.label[lang] }}</p>
           <h3>{{ item.title[lang] }}</h3>
           <p>{{ item.desc[lang] }}</p>
         </article>
@@ -34,13 +35,21 @@ article {
   border-top: 1px solid var(--line);
 }
 
+.label {
+  margin: 0 0 0.35rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--primary);
+  letter-spacing: 0.02em;
+}
+
 h3 {
   margin: 0 0 0.45rem;
   font-size: 1.15rem;
   letter-spacing: -0.02em;
 }
 
-p {
+article > p:last-child {
   margin: 0;
   color: var(--muted);
 }

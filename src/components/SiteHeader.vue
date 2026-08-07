@@ -9,10 +9,11 @@ const { theme, toggleTheme } = useTheme()
 
 const nav = computed(() => [
   { href: '#about', label: t(copy.nav.about) },
-  { href: '#experience', label: t(copy.nav.experience) },
   { href: '#projects', label: t(copy.nav.projects) },
+  { href: '#experience', label: t(copy.nav.experience) },
   { href: '#stack', label: t(copy.nav.stack) },
-  { href: '#teaching', label: t(copy.nav.teaching) },
+  { href: '#education', label: t(copy.nav.education) },
+  { href: '#beyond', label: t(copy.nav.beyond) },
   { href: '#contact', label: t(copy.nav.contact) },
 ])
 </script>
@@ -21,8 +22,8 @@ const nav = computed(() => [
   <header class="header">
     <div class="wrap header-inner">
       <a class="logo" href="#top" aria-label="Esther Liu">
-        <span class="logo-mark">EL</span>
-        <span class="logo-text">Esther Liu</span>
+        <!-- <span class="logo-mark">EL</span> -->
+        <span class="logo-text">劉育均 Esther Liu</span>
       </a>
 
       <nav class="nav" aria-label="Primary">
@@ -92,13 +93,13 @@ const nav = computed(() => [
 .nav {
   display: none;
   justify-content: center;
-  gap: 1.15rem;
+  gap: 0.85rem;
 }
 
 .nav a {
   text-decoration: none;
   color: var(--muted);
-  font-size: 0.9rem;
+  font-size: 0.86rem;
   font-weight: 600;
   transition: color 0.2s ease;
 }
