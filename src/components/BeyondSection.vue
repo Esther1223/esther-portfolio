@@ -57,7 +57,7 @@ article > p:last-child {
 @media (min-width: 800px) {
   .items {
     grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+    gap: 0 2rem;
   }
 }
 </style>

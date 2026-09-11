@@ -17,13 +17,18 @@ function onRipple(e) {
     <div class="wrap reveal">
       <p class="eyebrow">{{ t(copy.contact.eyebrow) }}</p>
       <h2 class="section-title">{{ t(copy.contact.title) }}</h2>
-      <p class="section-lead">{{ t(copy.contact.body) }}</p>
 
       <div class="links">
         <a class="btn btn-primary btn-ripple" :href="links.email" @pointerdown="onRipple">
           {{ links.emailLabel }}
         </a>
-        <a class="btn btn-ghost" :href="links.github" target="_blank" rel="noopener noreferrer">
+        <a
+          class="btn btn-primary btn-ripple"
+          :href="links.github"
+          target="_blank"
+          rel="noopener noreferrer"
+          @pointerdown="onRipple"
+        >
           {{ links.githubLabel }}
         </a>
       </div>

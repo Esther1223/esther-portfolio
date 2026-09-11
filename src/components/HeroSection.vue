@@ -33,6 +33,7 @@ function onRipple(e) {
         <p class="greeting">{{ t(copy.hero.greeting) }}</p>
         <h1>{{ t(copy.hero.title) }}</h1>
         <p class="lead">{{ t(copy.hero.lead) }}</p>
+        <p class="affiliation">{{ t(copy.hero.affiliation) }}</p>
         <p class="roles">{{ t(copy.hero.roles) }}</p>
         <a class="btn btn-primary btn-ripple" href="#projects" @pointerdown="onRipple">
           {{ t(copy.hero.cta) }}
@@ -131,7 +132,7 @@ function onRipple(e) {
 
 h1 {
   margin: 0;
-  max-width: 14ch;
+  max-width: 16ch;
   font-size: clamp(2.05rem, 5.2vw, 3.55rem);
   font-weight: 800;
   letter-spacing: -0.045em;
@@ -141,14 +142,21 @@ h1 {
 
 .lead {
   margin: 1.15rem 0 0;
-  max-width: 34rem;
+  max-width: 36rem;
   color: var(--muted);
   font-size: 1.05rem;
   animation: rise 0.8s ease both 0.18s;
 }
 
+.affiliation {
+  margin: 1rem 0 0;
+  font-size: 0.95rem;
+  font-weight: 700;
+  animation: rise 0.8s ease both 0.22s;
+}
+
 .roles {
-  margin: 1.1rem 0 0;
+  margin: 0.45rem 0 0;
   font-size: 0.92rem;
   font-weight: 700;
   color: var(--primary);

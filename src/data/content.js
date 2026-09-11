@@ -9,18 +9,22 @@ export const copy = {
     contact: { zh: '聯絡', en: 'Contact' },
   },
   hero: {
-    greeting: { zh: '嗨，我是 Esther。', en: "Hi, I'm Esther." },
+    greeting: { zh: '嗨，我是劉育均。', en: "Hi, I'm Yu-Chun Liu (Esther)." },
     title: {
-      zh: '喜歡把想法做成真正能使用的產品。',
-      en: 'I enjoy turning ideas into products people can actually use.',
+      zh: '從系統實作，走到問題定義與分析。',
+      en: 'From building systems to defining and analyzing problems.',
     },
     lead: {
-      zh: '我喜歡把複雜的問題，一步一步變成簡單好用的系統。',
-      en: 'I enjoy turning complex problems into simple and useful software.',
+      zh: '我偏好資料處理、資料分析、資料庫與系統整合，也有企業內部系統的實作經驗。下一步希望把工程能力，延伸到研究方法、問題定義與實驗分析。',
+      en: 'I care most about data processing, analysis, databases, and system integration, with hands-on experience building internal enterprise systems. I want to take that engineering practice into research methods, problem formulation, and experimental analysis.',
+    },
+    affiliation: {
+      zh: '國立臺灣師範大學 資訊工程學系 · 四年級',
+      en: 'NTNU CSIE · Senior',
     },
     roles: {
-      zh: '軟體工程師 · 企業系統 / 網站 · AI 協作開發 · 教學',
-      en: 'Software Engineer · Systems / Web · AI-assisted building · Teaching',
+      zh: '資料處理 · 資料分析 · 資料庫 · 系統整合',
+      en: 'Data processing · Analysis · Databases · System integration',
     },
     cta: { zh: '看看作品', en: 'See my work' },
     photo: { zh: '照片稍後放這裡', en: 'Photo coming soon' },
@@ -28,118 +32,462 @@ export const copy = {
   about: {
     eyebrow: { zh: 'About', en: 'About' },
     title: {
-      zh: '用技術解決實際的問題',
-      en: 'I use technology to solve real problems',
+      zh: '把實際系統裡的問題，整理成可以分析的問題',
+      en: 'I turn messy system problems into questions I can analyze',
     },
     body: {
-      zh: '我喜歡把複雜的需求拆解成簡單、容易使用的系統。無論是企業內部工具、網站，或是各種應用，我都希望做出真正能解決問題的產品。除了功能完成之外，我也很重視使用流程是否直覺，以及程式是否容易維護。',
-      en: 'I like breaking complex requirements into simple, easy-to-use systems. Whether it is an internal tool, a website, or any applications, I hope to build products that actually solve problems. Beyond shipping features, I care about whether the flow feels intuitive—and whether the code is easy to maintain.',
+      zh: '我目前就讀國立臺灣師範大學資訊工程學系四年級。大學期間在嘉泰興參與官網與多項內部系統，也做過資料庫課程專題與視障輔助相關的視覺專題。我比較喜歡的工作是：把資料整理清楚、把流程設計好、再把系統接到真正會被使用的地方。',
+      en: 'I am a senior in Computer Science and Information Engineering at National Taiwan Normal University. During undergrad I helped build the company website and several internal systems at JTX, and completed a database course project plus a computer-vision project for visually impaired users. I like the work of cleaning data, designing workflows, and connecting systems to real use.',
     },
     traitsTitle: { zh: '我在意的事', en: 'What I care about' },
     traits: [
       {
-        zh: '使用者體驗',
-        en: 'User experience',
-        desc: { zh: '不是漂亮，而是好用。', en: 'Not about looking pretty—about being easy to use.' },
-      },
-      {
-        zh: '清楚的程式架構',
-        en: 'Clear code structure',
+        zh: '資料處理與分析',
+        en: 'Data processing and analysis',
         desc: {
-          zh: '讓功能容易擴充與維護。',
-          en: 'So features are easy to extend and maintain.',
+          zh: '先看懂資料長什麼樣子，再決定系統該怎麼做。',
+          en: 'Understand the data first, then decide how the system should work.',
         },
       },
       {
-        zh: '持續學習',
-        en: 'Continuous learning',
+        zh: '資料庫與規則設計',
+        en: 'Databases and rules',
         desc: {
-          zh: '透過 AI 協作，把系統或小東西做出來。',
-          en: 'I collaborate with AI to build systems—and small things.',
+          zh: '角色、權限、流程與限制要寫清楚，系統才穩。',
+          en: 'Roles, permissions, and constraints need to be explicit for a system to hold.',
         },
       },
       {
-        zh: '團隊合作',
-        en: 'Collaboration',
+        zh: '系統整合',
+        en: 'System integration',
         desc: {
-          zh: '喜歡一起討論，把想法做出來。',
-          en: 'I enjoy discussing ideas together and building them out.',
+          zh: '讓網站、內部工具和現場流程接在一起，而不是各做各的。',
+          en: 'Connect websites, internal tools, and on-site workflows—instead of leaving them as separate pieces.',
+        },
+      },
+      {
+        zh: '問題定義',
+        en: 'Problem formulation',
+        desc: {
+          zh: '希望把工程實作，延伸到研究方法與實驗分析。',
+          en: 'I want to extend engineering work into research methods and experimental analysis.',
         },
       },
     ],
     journeyTitle: { zh: '到現在為止', en: 'How I got here' },
     journey: [
       { year: '2023', label: { zh: '進入師大資工', en: 'Started NTNU CS' } },
-      { year: '2024', label: { zh: '開始接觸軟體開發 ', en: 'Started software development' } },
-      { year: '2025', label: { zh: '開始做 WMS 與企業官網', en: 'Started WMS and company website' } },
-      { year: '2026', label: { zh: '完成 LMS 系統', en: 'Shipped the LMS system' } },
-      { year: 'Now', label: { zh: '持續學習、持續做', en: 'Keep learning. Keep building.' } },
+      { year: '2024', label: { zh: '加入嘉泰興，開始企業系統開發', en: 'Joined JTX and started building internal systems' } },
+      { year: '2025', label: { zh: '參與 WMS 與企業官網', en: 'Worked on WMS and the company website' } },
+      { year: '2026', label: { zh: '完成 LMS；啟動自建 HRM；視障與資料庫專題', en: 'Shipped LMS; started HRM; vision and database projects' } },
+      { year: 'Now', label: { zh: 'HRM 持續開發，準備把實作延伸到研究', en: 'HRM in progress; taking systems work toward research' } },
     ],
   },
   projects: {
-    eyebrow: { zh: 'Featured Projects', en: 'Featured Projects' },
-    title: { zh: '代表作品', en: 'Projects I want to share' },
-    note: {
-      zh: '更多作品與 Demo 連結會陸續補上。',
-      en: 'More demos and case studies coming soon.',
+    eyebrow: { zh: 'Selected Work', en: 'Selected Work' },
+    title: { zh: '代表作品', en: 'Selected work' },
+    lead: {
+      zh: '重點放在企業系統、視障專題、資料庫專題，以及可公開的作品連結。',
+      en: 'The focus is industry systems, the vision project, the database project, and public artifacts.',
     },
-    items: [
+    jump: [
+      { href: '#project-vision', zh: '視障專題', en: 'Vision project' },
+      { href: '#project-campus', zh: '資料庫專題', en: 'Database project' },
+      { href: '#project-lms', zh: '標籤管理系統', en: 'Label system' },
+      { href: '#project-hr', zh: '人資管理系統', en: 'HR system' },
+    ],
+    academicTitle: { zh: '學術專題', en: 'Academic projects' },
+    industryTitle: { zh: '企業實務', en: 'Industry systems' },
+    othersTitle: { zh: '其他企業系統', en: 'Other industry work' },
+    cases: [
       {
+        id: 'vision',
         accent: true,
+        category: { zh: '大三專題 · 資訊專題研究（一）', en: 'Junior project · Research Topics in CS (I)' },
+        name: { zh: '視障智慧輔助系統', en: 'Intelligent Visual Aid System for the Blind' },
+        period: { zh: '指導：李忠謀教授', en: 'Advisor: Prof. Lee, G.' },
+        lead: {
+          zh: '以 Raspberry Pi 與 ResNet18 判斷前方左／中／右區域是否可通行（Safe / Blocked），再以語音給出直走、往左前、往右前或停止。問題從物件偵測改寫成通行判斷，以兼顧準確率與嵌入式即時性。',
+          en: 'A Raspberry Pi system that uses ResNet18 to classify left / center / right regions as Safe or Blocked, then speaks walk / left / right / stop. We reframed object detection as walkability classification for accuracy and real-time edge inference.',
+        },
+        stack: ['Python', 'PyTorch', 'ResNet18', 'Raspberry Pi 4B', 'Picamera2'],
+        tags: {
+          zh: ['通行區域判斷', '重疊切割',],
+          en: ['Walkability', 'Overlapping crops'],
+        },
+        blocks: [
+          {
+            label: { zh: '研究問題', en: 'Research question' },
+            body: {
+              zh: '傳統導盲杖只能感測接觸範圍，導盲犬成本高且難以普及；高階 GPU 方案又不便攜帶。如何在低成本嵌入式裝置上，即時判斷前方哪個方向可通行，並用語音回饋？',
+              en: 'Canes only sense contact range; guide dogs are costly and scarce; GPU-heavy systems are hard to carry. How can a low-cost embedded device decide which forward direction is walkable and speak the result in real time?',
+            },
+          },
+          {
+            label: { zh: '系統流程', en: 'Pipeline' },
+            items: [
+              { zh: 'Camera 擷取前方影像', en: 'Capture a front-facing frame' },
+              { zh: '重疊切割為左 0–0.45、中 0.25–0.75、右 0.55–1.00', en: 'Overlap-crop into left 0–0.45, center 0.25–0.75, right 0.55–1.00' },
+              { zh: 'ResNet18 將各區分為 Safe / Blocked', en: 'ResNet18 classifies each region as Safe / Blocked' },
+              { zh: '決策模組產生導航建議並語音輸出', en: 'A decision module produces a navigation cue and speaks it' },
+            ],
+          },
+          {
+            label: { zh: '我的負責內容', en: 'My contribution' },
+            body: {
+              zh: '資料蒐集、模型訓練、測試驗證與報告撰寫。另一組員負責系統設計、程式開發、系統整合與海報。',
+              en: 'Data collection, model training, evaluation, and report writing. Another teammate owned system design, coding, integration, and the poster.',
+            },
+          },
+          {
+            label: { zh: '資料集與方法', en: 'Dataset and method' },
+            items: [
+              { zh: '原始影像 1104 張 → 切割後 3312 張（Blocked 2370 / Safe 942）', en: '1,104 raw images → 3,312 cropped patches (Blocked 2,370 / Safe 942)' },
+              { zh: 'ResNet18 · Adam · LR 0.001 · Epoch 40 · Cross Entropy', en: 'ResNet18 · Adam · LR 0.001 · 40 epochs · cross-entropy' },
+              { zh: '早期 YOLO + MiDaS 在 Pi 上太慢，改為區域通行分類以提升效率', en: 'Early YOLO + MiDaS was too slow on Pi; we switched to region walkability classification' },
+            ],
+          },
+          {
+            label: { zh: '成功／失敗與分析', en: 'Cases and analysis' },
+            items: [
+              { zh: '成功例：左 Safe、中／右 Blocked → 建議往左', en: 'Success: left Safe, center/right Blocked → suggest left' },
+              { zh: '失敗例：低光源＋鏡頭偏高，左側誤判為 Blocked → 錯誤建議停止', en: 'Failure: low light + high camera angle mislabeled left as Blocked → wrongly suggested stop' },
+              { zh: '低光源使輪廓與紋理變弱；胸口高度偏高時，低矮障礙物佔比過小', en: 'Low light weakens contours; a chest-high camera shrinks low obstacles in frame' },
+              { zh: 'Blocked 約為 Safe 兩倍，模型偏傾向預測 Blocked', en: 'Blocked is ~2× Safe, so the model biases toward Blocked' },
+            ],
+          },
+        ],
+        metrics: [
+          { value: '86.1%', label: { zh: 'Accuracy', en: 'Accuracy' } },
+          { value: '77.27%', label: { zh: 'Precision', en: 'Precision' } },
+          { value: '72.34%', label: { zh: 'Recall', en: 'Recall' } },
+          { value: '74.73%', label: { zh: 'F1', en: 'F1' } },
+        ],
+        figures: [
+        ],
+        links: {
+          demo: 'https://drive.google.com/file/d/1U4d9AlGtM8g3eshOWk25JOM9Ode1nWQ0/view?usp=drive_link',
+          github: 'https://github.com/Esther1223/ivas',
+          report: 'docs/vision-aid-report.pdf',
+          poster: 'docs/vision-aid-poster.pdf',
+        },
+      },
+      {
+        id: 'campus',
+        accent: true,
+        category: { zh: '資料庫課程專題', en: 'Database course project' },
+        name: { zh: '校園空間租借系統', en: 'Campus Space Reservation System' },
+        period: { zh: '資料庫課程專題', en: 'Database course project' },
+        lead: {
+          zh: '用資料庫整合校園空間的查詢、預約、審核、付款與紀錄，避免人工流程造成的不一致與重複預約。前後端以 Laravel、Vue.js、MySQL 實作；我負責使用者註冊登入、角色權限、空間資料管理，以及使用紀錄與管理查詢。',
+          en: 'A database-backed campus booking system for query, reservation, approval, payment, and records—reducing inconsistency and double-booking. Built with Laravel, Vue.js, and MySQL; I owned registration / login, roles and permissions, room data management, and usage / admin queries.',
+        },
+        stack: ['MySQL', 'Laravel', 'Vue.js', 'ER / Schema Design'],
+        tags: {
+          zh: ['ER Model', '角色權限', '空間管理'],
+          en: ['ER model', 'Roles', 'Room management'],
+        },
+        blocks: [
+          {
+            label: { zh: '專題目的', en: 'Goal' },
+            body: {
+              zh: '校園空間借用以人工或分散系統處理時，管理方式不一致、容易預約失敗。本系統以資料庫統一管理使用者、角色、單位、空間、時段、預約、審核與付款。',
+              en: 'Campus booking was manual or fragmented, so policies conflicted and bookings failed. This system unifies users, roles, units, rooms, slots, reservations, approvals, and payments in one database.',
+            },
+          },
+          {
+            label: { zh: '我的負責功能', en: 'My responsibilities' },
+            items: [
+              { zh: '使用者註冊與登入', en: 'User registration and login' },
+              { zh: '角色與權限管理', en: 'Role and permission management' },
+              { zh: '空間資料管理', en: 'Room / space data management' },
+              { zh: '使用紀錄與管理查詢', en: 'Usage records and admin queries' },
+            ],
+          },
+          {
+            label: { zh: '角色與權限', en: 'Roles and permissions' },
+            items: [
+              { zh: '學生：查詢；可預約一般教室／會議室', en: 'Student: query; book classrooms / meeting rooms' },
+              { zh: '教授：查詢；可預約教室／會議室／實驗室', en: 'Professor: query; book classrooms / meeting rooms / labs' },
+              { zh: '行政人員：可預約，並審核申請與處理費用', en: 'Admin staff: book, approve requests, and handle fees' },
+              { zh: '系統管理員：維護空間、單位、時段價格與權限設定', en: 'System admin: maintain rooms, units, slot prices, and permissions' },
+            ],
+          },
+          {
+            label: { zh: '主要資料表', en: 'Core tables' },
+            items: [
+              { zh: 'user、role、user_role、affiliation', en: 'user, role, user_role, affiliation' },
+              { zh: 'room、time_slot、allow_aff', en: 'room, time_slot, allow_aff' },
+              { zh: 'reservation、approve、payment', en: 'reservation, approve, payment' },
+            ],
+          },
+          {
+            label: { zh: '空間／單位／審核／預約／付款規則', en: 'Key rules' },
+            items: [
+              { zh: '同空間同日期同時段僅能有一筆成功預約；最小單位一小時', en: 'Only one successful booking per room / date / slot; minimum unit is one hour' },
+              { zh: '單位開放：本單位／allow_aff 特定單位／open_access_all 全部單位', en: 'Unit access: own unit / allow_aff list / open_access_all' },
+              { zh: 'need_approval 為真則先待審核；通過後其他同槽待審核自動失敗', en: 'If need_approval, start pending; on approve, other pending requests for the same slot fail' },
+              { zh: '僅成功預約佔用時段；取消後立即釋出', en: 'Only successful reservations occupy a slot; cancel releases it immediately' },
+              { zh: '總務處等收費場地：時間 × 時段價格；不滿一小時以一小時計', en: 'Paid venues: hours × slot price; under one hour rounds up to one hour' },
+            ],
+          },
+          {
+            label: { zh: '設計過程中的調整', en: 'Design changes' },
+            body: {
+              zh: '報告含修改後的 E-R diagram：補上單位開放（allow_aff）、跨時段 group_id、付款狀態，以及 time_slot 以 (room_id, time_slot_id) 複合鍵支援各空間不同時段與價格。',
+              en: 'The report includes a revised E-R diagram: unit access via allow_aff, multi-slot group_id, payment status, and time_slot keyed by (room_id, time_slot_id) so each room can have its own slots and prices.',
+            },
+          },
+        ],
+        metrics: [],
+        figures: [
+          {
+            standalone: true,
+            src: 'docs/database-er.png',
+            caption: {
+              zh: 'E-R Diagram：使用者、角色、單位、空間、時段、預約、審核與付款',
+              en: 'E-R diagram: users, roles, units, rooms, slots, reservations, approvals, and payments',
+            },
+          },
+          {
+            src: 'docs/database-image-1.png',
+            caption: { zh: '儀表板：預約、審核與本月統計', en: 'Dashboard: reservations, approvals, and monthly stats' },
+          },
+          {
+            src: 'docs/database-image-2.png',
+            caption: { zh: '空間管理：容量、費率與審核設定', en: 'Room management: capacity, rates, and approval settings' },
+          },
+          {
+            src: 'docs/database-image-3.png',
+            caption: { zh: '建立預約：空間、日期與可預約時段', en: 'Create reservation: room, date, and available slots' },
+          },
+          {
+            src: 'docs/database-image-4.png',
+            caption: { zh: '我的預約：狀態與取消', en: 'My reservations: status and cancel' },
+          },
+          {
+            src: 'docs/database-image-5.png',
+            caption: { zh: '審核管理：核准／拒絕待審申請', en: 'Approvals: accept / reject pending requests' },
+          },
+          {
+            src: 'docs/database-image-6.png',
+            caption: { zh: '付款管理：金額與付款狀態', en: 'Payments: amount and payment status' },
+          },
+        ],
+        links: {
+          demo: null,
+          github: 'https://github.com/Esther1223/database-project',
+          report: null,
+          poster: null,
+        },
+      },
+      {
+        id: 'lms',
+        accent: true,
+        category: { zh: '嘉泰興 · 代表專案', en: 'JTX · featured' },
+        name: { zh: '企業標籤管理系統（LMS）', en: 'Label Management System (LMS)' },
+        period: { zh: '2026', en: '2026' },
+        lead: {
+          zh: '企業內部標籤系統：處理客戶由 SAP、船務等來源匯出的 Excel／CSV，依各客戶規則驗證後再進入標籤產出。分工不是前後端切開，而是垂直切——同事負責標籤列印一條龍（ZPL／編輯器／預覽／產出），我負責匯入、客戶、範本與頁面流程。上線後標籤列印時間至少減少一半。',
+          en: 'An internal label system that validates customer Excel / CSV from SAP and shipping sources, then feeds label production. Work was split vertically—not frontend vs backend: a colleague owned the full print line (ZPL / editor / preview / output); I owned import, customers, templates, and page flow. After launch, label printing time fell by at least half.',
+        },
+        stack: ['Python', 'Vue.js', 'Docker', 'ZPL'],
+        tags: {
+          zh: ['異質資料匯入', '客戶規則', '垂直分工'],
+          en: ['Heterogeneous import', 'Customer rules', 'Vertical ownership'],
+        },
+        blocks: [
+          {
+            label: { zh: '背景', en: 'Context' },
+            body: {
+              zh: '現場標籤列印與出貨資料整理耗時。不同客戶從 SAP、船務等系統匯出格式不一的 Excel／CSV，需要先依客戶規則驗證，再進入標籤版面與列印。',
+              en: 'Label printing and shipping-data prep were slow. Customers exported differently shaped Excel / CSV from SAP and shipping systems, so data had to be validated by customer rules before layout and print.',
+            },
+          },
+          {
+            label: { zh: '分工', en: 'Division of work' },
+            items: [
+              {
+                zh: '同事（Eric）：標籤列印垂直線——後端 ZPL（套印、旋轉、CJK 點陣、條碼）＋前端編輯器、預覽、產出頁',
+                en: 'Colleague (Eric): the print vertical—backend ZPL (overlay, rotation, CJK bitmap, barcodes) plus frontend editor, preview, and output',
+              },
+              {
+                zh: '我：匯入／客戶／範本頁、達豐緯創欄位組裝、版面與 Docker；會碰 ZPL，但多半是接資料與畫面，不是列印引擎',
+                en: 'Me: import / customer / template pages, customer-specific field assembly, layout, and Docker; I touch ZPL mostly via data and UI, not the print engine',
+              },
+              {
+                zh: '兩邊都要碰：排版常數、field_bindings 契約、產出前資料組裝',
+                en: 'Shared: layout constants, field_bindings contract, and pre-output data assembly',
+              },
+            ],
+          },
+          {
+            label: { zh: '卡點與解法', en: 'Problems and fixes' },
+            items: [
+              {
+                zh: '卡點：客戶資料來源與格式差異大。解法：依各客戶設定必填、型別、預設值、唯一欄位與複合鍵；寫入前先回饋錯誤位置與原因。',
+                en: 'Problem: sources and formats differ widely. Fix: per-customer required fields, types, defaults, unique fields, and composite keys; report error location and reason before write.',
+              },
+              {
+                zh: '卡點：列印貫穿前後端，不能用前後端切開分工。解法：把列印當垂直線交給同事；我專注匯入、客戶業務鍵與範本權限。',
+                en: 'Problem: printing spans both ends, so a frontend / backend split fails. Fix: treat print as one vertical owned by a colleague; I focus on import, business keys, and template permissions.',
+              },
+            ],
+          },
+          {
+            label: { zh: '成果', en: 'Outcome' },
+            body: {
+              zh: '系統已上線；標籤列印時間至少減少一半，異質出貨資料驗證與客戶範本流程可維護。',
+              en: 'In production: label printing time fell by at least half, with maintainable heterogeneous validation and customer-template flows.',
+            },
+          },
+        ],
+        metrics: [
+          { value: '≥50%', label: { zh: '列印時間減少', en: 'Less printing time' } },
+          { value: '0→1', label: { zh: '從需求到上線', en: 'Requirements to production' } },
+        ],
+        figures: [
+          {
+            src: 'docs/lms-image-1.png',
+            caption: { zh: '資料匯入：欄位規則、必填與驗證後再寫入', en: 'Data import: column rules, required fields, validate before write' },
+          },
+          {
+            src: 'docs/lms-image-2.png',
+            caption: { zh: '列印匯出：資料組裝、標籤預覽與 ZPL', en: 'Print export: data assembly, label preview, and ZPL' },
+          },
+          {
+            src: 'docs/lms-image-3.png',
+            caption: { zh: '範本編輯器：動態欄位與直／橫向預覽', en: 'Template editor: dynamic fields and portrait / landscape preview' },
+          },
+        ],
+        links: { demo: null, github: null, report: null, poster: null },
+      },
+      {
+        id: 'hr',
+        accent: true,
+        category: { zh: '嘉泰興 · 代表專案', en: 'JTX · featured' },
+        name: { zh: '人資管理系統（HRM）', en: 'HR Management System (HRM)' },
+        period: { zh: '2026-08 — 現在', en: 'Aug 2026 — Present' },
+        lead: {
+          zh: '自建 HRM（出勤＋算薪）：FastAPI + Vue 3 + PostgreSQL + Redis，Flutter 行動端。2026-08-11 起建置，目前仍在開發／維護。Phase 1 已能跑通員工主檔 → 打卡／請假 → 日結 → 計薪關帳 → 薪資單 PDF。',
+          en: 'A self-built HRM for attendance and payroll: FastAPI + Vue 3 + PostgreSQL + Redis, with a Flutter mobile app. Started 2026-08-11 and still in active development. Phase 1 already runs employee master → punch / leave → daily close → payroll close → payslip PDF.',
+        },
+        stack: ['FastAPI', 'Vue 3', 'PostgreSQL', 'Redis', 'Flutter', 'Docker'],
+        tags: {
+          zh: ['出勤＋算薪', '仍在開發', '行動打卡'],
+          en: ['Attendance + payroll', 'Active development', 'Mobile punch'],
+        },
+        blocks: [
+          {
+            label: { zh: '背景', en: 'Context' },
+            body: {
+              zh: '公司需要自建人資系統，涵蓋人事、班別／行事曆、出勤日結、請假簽核、月薪計算與薪資單，並支援 App 打卡（GPS／BSSID）與補登。',
+              en: 'The company needed a self-built HR system covering personnel, shifts / calendar, daily attendance close, leave approval, monthly payroll, payslips, and app punches (GPS / BSSID) with make-up requests.',
+            },
+          },
+          {
+            label: { zh: '技術', en: 'Stack' },
+            items: [
+              { zh: '後端：Python 3.12+ / FastAPI、SQLAlchemy 2、Alembic、JWT、Pydantic', en: 'Backend: Python 3.12+ / FastAPI, SQLAlchemy 2, Alembic, JWT, Pydantic' },
+              { zh: '資料：PostgreSQL；Redis 作日結／算薪 job 佇列', en: 'Data: PostgreSQL; Redis for daily-close / payroll job queues' },
+              { zh: '前端：Vue 3 + TypeScript + Vite + Naive UI + Pinia', en: 'Web: Vue 3 + TypeScript + Vite + Naive UI + Pinia' },
+              { zh: 'App：Flutter（登入、打卡、裝置綁定、行事曆、請假、補登）', en: 'App: Flutter (login, punch, device bind, calendar, leave, make-up)' },
+              { zh: '其他：Docker Compose；薪資單 PDF（ReportLab）；PII Fernet 加密', en: 'Also: Docker Compose; payslip PDF (ReportLab); PII via Fernet' },
+            ],
+          },
+          {
+            label: { zh: '負責內容', en: 'My role' },
+            items: [
+              { zh: '帳號與權限', en: 'Accounts and permissions' },
+              { zh: '請假與簽核', en: 'Leave requests and approval' },
+              { zh: '打卡據點、場外打卡審核、漏打補登', en: 'Punch sites, off-site review, missed-punch make-up' },
+              { zh: '把直屬／部門／上級主管與禁止自審、GPS／Wi-Fi／場外打卡轉成資料結構與規則', en: 'Encode manager hierarchy, no-self-approve, and GPS / Wi-Fi / off-site punch rules' },
+            ],
+          },
+          {
+            label: { zh: '時程與階段', en: 'Timeline and phases' },
+            items: [
+              { zh: '2026-08-11 3 repo 初始化；仍在開發／維護（約一個月）', en: 'Three repos initialized 2026-08-11; still in development (~one month)' },
+              { zh: 'Phase 1（能發薪）已落地：人事、班別、日結、請假、月薪、薪資單 PDF', en: 'Phase 1 (payroll-ready) shipped: personnel, shifts, daily close, leave, monthly pay, payslip PDF' },
+              { zh: 'Phase 2（行動 ESS）部分落地：App 打卡／補登／請假已有；銀行薪轉檔、App 薪資單尚未做', en: 'Phase 2 (mobile ESS) partial: app punch / make-up / leave done; bank transfer file and app payslip not yet' },
+              { zh: '計薪區間：上月 25 日～本月 24 日', en: 'Pay period: 25th of last month → 24th of this month' },
+            ],
+          },
+          {
+            label: { zh: '卡點與解法', en: 'Problems and fixes' },
+            items: [
+              {
+                zh: '卡點：簽核含直屬、部門、上級，且禁止自行審核。解法：組織層級與禁止自審寫進資料結構與流程。',
+                en: 'Problem: multi-level approval plus no self-approve. Fix: encode org hierarchy and the rule in data and workflow.',
+              },
+              {
+                zh: '卡點：GPS、Wi-Fi、場外打卡規則容易散落。解法：各打卡情境對應系統規則與審核流程。',
+                en: 'Problem: GPS, Wi-Fi, and off-site punch rules scatter easily. Fix: map each scenario to system rules and review flows.',
+              },
+            ],
+          },
+          {
+            label: { zh: '成果', en: 'Outcome' },
+            body: {
+              zh: '尚無上線營運數字（仍在內建開發）。已能跑通核心發薪鏈；repo 可量化規模如下。',
+              en: 'No post-launch ops metrics yet (still in-house). The core payroll chain already runs; repo-scale numbers below.',
+            },
+          },
+        ],
+        metrics: [
+          { value: '86', label: { zh: '3 repo commits', en: 'Commits across 3 repos' } },
+          { value: '104', label: { zh: 'API endpoints', en: 'API endpoints' } },
+          { value: '91', label: { zh: 'pytest', en: 'pytest cases' } },
+          { value: '31', label: { zh: 'Domain models', en: 'Domain models' } },
+          { value: '18', label: { zh: 'migrations', en: 'Migrations' } },
+        ],
+        figures: [
+          {
+            src: 'docs/hr-image-1.png',
+            caption: { zh: '總覽：待簽核、薪資單與常用動作', en: 'Overview: pending approvals, payslip, and quick actions' },
+          },
+          {
+            src: 'docs/hr-image-2.png',
+            caption: { zh: '行事曆：工作日／休息日／國定假', en: 'Calendar: workdays / rest days / holidays' },
+          },
+          {
+            src: 'docs/hr-image-3.png',
+            caption: { zh: '請假申請：假別、代理人與時段', en: 'Leave request: type, substitute, and time range' },
+          },
+        ],
+        links: { demo: null, github: null, report: null, poster: null },
+      },
+    ],
+    others: [
+      {
         name: { zh: 'WMS 倉儲管理系統', en: 'WMS · Warehouse Management' },
         period: { zh: '2025 — 現在', en: '2025 — Present' },
-        subtitle: {
-          zh: 'Warehouse Management System',
-          en: 'Warehouse Management System',
-        },
+        subtitle: { zh: 'Warehouse Management System', en: 'Warehouse Management System' },
         body: {
-          zh: '企業內部倉儲系統：涵蓋入庫、出庫、揀貨、標籤與 ERP 串接。從 2025 做到現在，持續依現場需求調整流程，讓倉庫作業更順。',
-          en: 'An internal warehouse system covering inbound, outbound, picking, labels, and ERP integration. I have been building and iterating on it since 2025 to fit real warehouse workflows.',
+          zh: '企業內部倉儲系統：入庫、出庫、揀貨、標籤與 ERP 串接。從 2025 做到現在，持續依現場需求調整流程。',
+          en: 'An internal warehouse system covering inbound, outbound, picking, labels, and ERP integration. In iteration since 2025 to match on-site workflows.',
         },
         stack: ['Vue.js', 'PHP', 'Docker'],
         tags: {
-          zh: ['倉儲流程', '前後端', '持續維運'],
-          en: ['Warehouse flow', 'Full-stack', 'Ongoing'],
+          zh: ['倉儲流程', '系統整合'],
+          en: ['Warehouse flow', 'Integration'],
         },
-        links: { demo: null, github: null, case: null },
+        links: { demo: null, github: null },
       },
       {
-        accent: true,
-        name: { zh: 'LMS 標籤管理系統', en: 'LMS · Label Management' },
-        period: { zh: '2026', en: '2026' },
-        subtitle: {
-          zh: 'Label Management System',
-          en: 'Label Management System',
-        },
-        body: {
-          zh: '企業內部 0→1 系統：從需求、設計、開發、測試到部署，實際減少列印標籤時間至少一半。',
-          en: 'An internal 0→1 system from requirements to deployment that cut label printing time by at least half.',
-        },
-        stack: ['Python', 'Vue.js', 'Docker'],
-        tags: {
-          zh: ['需求分析', '全端開發', '部署上線'],
-          en: ['Requirements', 'Full-stack', 'Production'],
-        },
-        links: { demo: null, github: null, case: null },
-      },
-      {
-        accent: false,
         name: { zh: '企業官網', en: 'Company Website' },
         period: { zh: '2025 — 現在', en: '2025 — Present' },
-        subtitle: {
-          zh: 'Corporate Website',
-          en: 'Corporate Website',
-        },
+        subtitle: { zh: 'Corporate Website', en: 'Corporate Website' },
         body: {
-          zh: '從 2025 至今持續開發與維護公司官網，處理頁面、功能調整與使用體驗，讓對外呈現更穩定清楚。',
-          en: 'I have been building and maintaining the company website since 2025—pages, feature updates, and UX—so the public site stays clear and reliable.',
+          zh: '從 2025 至今持續開發與維護公司官網，處理頁面、功能調整與使用體驗。',
+          en: 'Building and maintaining the company website since 2025—pages, feature updates, and UX.',
         },
         stack: ['WordPress', 'PHP', 'JavaScript'],
         tags: {
-          zh: ['網站開發', '內容維護', '體驗優化'],
-          en: ['Web development', 'Content updates', 'UX polish'],
+          zh: ['網站開發', '內容維護'],
+          en: ['Web development', 'Content'],
         },
-        links: { demo: null, github: null, case: null },
+        links: { demo: null, github: null },
       },
     ],
   },
@@ -149,35 +497,39 @@ export const copy = {
     items: [
       {
         dates: { zh: '2024-09 — 現在', en: 'Sep 2024 — Present' },
-        org: { zh: '嘉泰興股份有限公司 · JTX', en: 'JTX Corporation' },
+        org: { zh: '嘉泰興股份有限公司', en: 'JTX Corporation' },
         role: { zh: '軟體工程師', en: 'Software Engineer' },
         points: [
           {
-            zh: '從 2025 起參與 WMS 倉儲管理系統與企業官網開發維護；2026 與同事完成 LMS 標籤管理系統。',
-            en: 'Since 2025, built and maintained WMS and the company website; in 2026, co-built the LMS label management system.',
+            zh: '參與公司官網與多項內部系統，代表專案為企業標籤管理系統與自建 HRM（出勤＋算薪）。',
+            en: 'Worked on the company website and internal systems; featured projects are LMS and a self-built HRM for attendance and payroll.',
           },
           {
-            zh: '以 Docker 建立一致化開發環境，協助部署、測試與版本管理。',
-            en: 'Set up consistent Docker environments for deployment, testing, and version control.',
+            zh: 'LMS：我負責匯入／客戶／範本；同事負責標籤列印垂直線（ZPL／編輯器／產出）。',
+            en: 'LMS: I owned import / customers / templates; a colleague owned the print vertical (ZPL / editor / output).',
           },
           {
-            zh: 'LMS 從需求分析到部署，實際縮短標籤列印時間至少一半。',
-            en: 'Took LMS from requirements to deployment, cutting label printing time by at least half.',
+            zh: 'HRM：FastAPI + Vue 3 + PostgreSQL + Redis + Flutter；2026-08 起建置，Phase 1 已能發薪。',
+            en: 'HRM: FastAPI + Vue 3 + PostgreSQL + Redis + Flutter; started Aug 2026, Phase 1 already payroll-ready.',
+          },
+          {
+            zh: 'LMS 上線後標籤列印時間至少減少一半。',
+            en: 'After LMS launched, label printing time fell by at least half.',
           },
         ],
       },
       {
         dates: { zh: '2026-01 — 2026-02', en: 'Jan 2026 — Feb 2026' },
         org: { zh: '艾思程式教育', en: 'Ace Programming Education' },
-        role: { zh: '講師', en: 'Instructor' },
+        role: { zh: 'Scratch 講師', en: 'Scratch Instructor' },
         points: [
           {
-            zh: '透過 OSEP Scratch 擴充套件設計實作活動，帶領學員完成遊戲與 AI 視覺辨識專題。',
-            en: 'Designed hands-on Scratch/OSEP activities for games and AI vision projects.',
+            zh: '透過 OSEP Scratch 擴充套件設計實作活動，帶領學員完成遊戲與 AI 視覺辨識小專題。',
+            en: 'Designed hands-on Scratch / OSEP activities so students could finish games and small AI vision projects.',
           },
           {
-            zh: '以互動教學與個別除錯指導，協助學員認識 AI 並解決程式問題。',
-            en: 'Guided learners through interactive teaching and debugging to understand AI.',
+            zh: '以互動教學與個別除錯指導為主，而不是只示範操作。',
+            en: 'Taught through interaction and one-on-one debugging, not only live demos.',
           },
         ],
       },
@@ -185,27 +537,27 @@ export const copy = {
   },
   stack: {
     eyebrow: { zh: 'Skills', en: 'Skills' },
-    title: { zh: '我常用的工具', en: 'Tools I work with' },
+    title: { zh: '技術能力', en: 'Technical skills' },
     lead: {
-      zh: '我沒有追求會最多技術，而是選擇適合問題的工具。',
-      en: 'I do not chase the longest tech list—I choose tools that fit the problem.',
+      zh: '以下是實際在系統裡用過的技術。',
+      en: 'These are the tools I have actually used in shipped systems.',
     },
     groups: [
       {
         title: { zh: 'Frontend', en: 'Frontend' },
-        items: ['Vue', 'WordPress', 'Responsive UI'],
+        items: ['Vue.js', 'TypeScript', 'WordPress', 'Flutter'],
       },
       {
         title: { zh: 'Backend', en: 'Backend' },
-        items: ['Python', 'PHP', 'MySQL', 'PostgreSQL'],
+        items: ['Python', 'FastAPI', 'PHP'],
       },
       {
-        title: { zh: 'AI 協作', en: 'AI Collaboration' },
-        items: ['Cursor', 'ChatGPT', 'AI Agents'],
+        title: { zh: 'Data', en: 'Data' },
+        items: ['SQL', 'PostgreSQL', 'MariaDB / MySQL', 'Redis'],
       },
       {
         title: { zh: 'Workflow', en: 'Workflow' },
-        items: ['Git', 'Docker', 'Jira', 'Agile'],
+        items: ['Git', 'Docker'],
       },
     ],
   },
@@ -217,8 +569,8 @@ export const copy = {
       en: 'National Taiwan Normal University',
     },
     dept: {
-      zh: '資訊工程學系',
-      en: 'Computer Science & Information Engineering',
+      zh: '資訊工程學系 · 四年級',
+      en: 'Computer Science & Information Engineering · Senior',
     },
     years: { zh: '2023 — 2027', en: '2023 — 2027' },
     meta: [
@@ -229,28 +581,52 @@ export const copy = {
   beyond: {
     eyebrow: { zh: 'Beyond Engineering', en: 'Beyond Engineering' },
     title: {
-      zh: '寫程式之外，我也喜歡帶人與分享',
-      en: 'Beyond code: teaching, leading, and sharing',
+      zh: '教學與帶領經驗',
+      en: 'Teaching and leadership',
     },
     body: {
-      zh: '除了寫程式，我也常透過教學、營隊與跨組合作，練習怎麼把事情講清楚、帶大家一起完成。',
-      en: 'Besides coding, I practice explaining clearly and getting things done with people—through teaching, camps, and cross-team work.',
+      zh: '這些不是主軸，但可以補充我怎麼帶人、怎麼把一件事從規劃做到現場完成。',
+      en: 'Secondary to the technical work, but useful evidence of planning, teaching, and getting a group through a live event.',
     },
     items: [
       {
         label: { zh: 'Teaching', en: 'Teaching' },
-        title: { zh: 'Scratch / AI 視覺辨識講師', en: 'Scratch / AI Vision Instructor' },
+        title: { zh: 'Scratch 講師', en: 'Scratch instructor' },
         desc: {
-          zh: '帶領學員完成遊戲與 AI 視覺辨識專題，並個別協助除錯。',
-          en: 'Led game and AI vision projects, with one-on-one debugging support.',
+          zh: '帶學生完成遊戲或 AI 視覺辨識小專題，並用個別除錯的方式教。',
+          en: 'Helped students finish games or small AI vision projects, teaching mainly through one-on-one debugging.',
         },
       },
       {
         label: { zh: 'Leadership', en: 'Leadership' },
-        title: { zh: '師大資工高中生夏令營總籌', en: 'NTNU CS Summer Camp Organizer' },
+        title: { zh: '偏鄉英語營總召', en: 'Rural English camp lead' },
         desc: {
-          zh: '規劃四天活動流程、後勤與日程，協調跨組團隊並即時處理現場問題。',
-          en: 'Planned a four-day camp, coordinated logistics, and handled on-site issues across teams.',
+          zh: '負責營隊整體規劃、分工與現場執行。',
+          en: 'Owned overall planning, division of work, and on-site execution.',
+        },
+      },
+      {
+        label: { zh: 'Leadership', en: 'Leadership' },
+        title: { zh: '宿營活動股長', en: 'Overnight camp activities lead' },
+        desc: {
+          zh: '規劃宿營活動流程，並帶同學把活動做完。',
+          en: 'Planned the activity flow and led peers through the event.',
+        },
+      },
+      {
+        label: { zh: 'Leadership', en: 'Leadership' },
+        title: { zh: '資工營隊輔股長', en: 'CS camp counselor lead' },
+        desc: {
+          zh: '帶領隊輔、照顧學員，並處理活動現場狀況。',
+          en: 'Led counselors, supported students, and handled on-site issues.',
+        },
+      },
+      {
+        label: { zh: 'Leadership', en: 'Leadership' },
+        title: { zh: '資工營總籌暨總務', en: 'CS camp organizer and logistics' },
+        desc: {
+          zh: '規劃時程、後勤與跨組協調，並即時處理現場問題。',
+          en: 'Planned the schedule, logistics, and cross-team coordination, and handled issues on site.',
         },
       },
     ],
@@ -258,18 +634,14 @@ export const copy = {
   contact: {
     eyebrow: { zh: 'Contact', en: 'Contact' },
     title: {
-      zh: '歡迎和我聊聊',
-      en: "Let's chat",
-    },
-    body: {
-      zh: '如果你對我的作品有興趣，或想聊聊軟體開發、用 AI 一起做東西、合作機會，都歡迎和我聯絡。',
-      en: 'If you are interested in my work, or want to talk about software development, building with AI, or collaboration opportunities, feel free to reach out.',
+      zh: '歡迎和我聯絡',
+      en: 'Get in touch',
     },
   },
   footer: {
     note: {
-      zh: '持續學習，持續打造有價值的產品。',
-      en: 'Keep learning. Keep building.',
+      zh: '把工程實作，延伸到問題定義與分析。',
+      en: 'From building systems to defining problems.',
     },
   },
 }

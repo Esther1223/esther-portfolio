@@ -121,6 +121,7 @@ button {
 
 .section {
   padding: clamp(4rem, 10vw, 7rem) 0;
+  scroll-margin-top: var(--header-h);
 }
 
 .reveal {
