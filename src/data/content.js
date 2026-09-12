@@ -149,9 +149,10 @@ export const copy = {
           {
             label: { zh: '成功／失敗與分析', en: 'Cases and analysis' },
             items: [
-              { zh: '成功例：左 Safe、中／右 Blocked → 建議往左', en: 'Success: left Safe, center/right Blocked → suggest left' },
-              { zh: '失敗例：低光源＋鏡頭偏高，左側誤判為 Blocked → 錯誤建議停止', en: 'Failure: low light + high camera angle mislabeled left as Blocked → wrongly suggested stop' },
-              { zh: '低光源使輪廓與紋理變弱；胸口高度偏高時，低矮障礙物佔比過小', en: 'Low light weakens contours; a chest-high camera shrinks low obstacles in frame' },
+              { zh: '成功例：左／中 Blocked、右 Safe → 正確建議往右', en: 'Success: left/center Blocked, right Safe → correctly suggested right' },
+              { zh: '失敗例：拍攝角度偏高，三區皆誤判為 Blocked → 錯誤建議停止；實際可直走', en: 'Failure: high camera angle mislabeled all regions as Blocked → stop; the path was walkable' },
+              { zh: '失敗例：右側光線偏暗被誤判為 Blocked；實際應為 Safe', en: 'Failure: the darker right region was mislabeled as Blocked; it should have been Safe' },
+              { zh: '低光源使輪廓與紋理變弱；鏡頭偏高時路面可通行區域佔比過小', en: 'Low light weakens contours; a high camera angle shrinks the walkable road in frame' },
               { zh: 'Blocked 約為 Safe 兩倍，模型偏傾向預測 Blocked', en: 'Blocked is ~2× Safe, so the model biases toward Blocked' },
             ],
           },
@@ -163,6 +164,27 @@ export const copy = {
           { value: '74.73%', label: { zh: 'F1', en: 'F1' } },
         ],
         figures: [
+          {
+            src: 'docs/ivas-success.jpg',
+            caption: {
+              zh: '成功辨識：左／中 Blocked、右 Safe → 建議往右',
+              en: 'Successful recognition: left/center Blocked, right Safe → turn right',
+            },
+          },
+          {
+            src: 'docs/ivas-fail.jpg',
+            caption: {
+              zh: '失敗例：拍攝角度偏高，三區皆判為 Blocked 而建議停止；實際可直走',
+              en: 'Failure: high camera angle labeled all regions as Blocked → stop; the path was walkable',
+            },
+          },
+          {
+            src: 'docs/ivas-light.jpg',
+            caption: {
+              zh: '失敗例：右側光線偏暗被誤判為 Blocked；實際應為 Safe',
+              en: 'Failure: the darker right region was mislabeled as Blocked; it should have been Safe',
+            },
+          },
         ],
         links: {
           demo: 'https://drive.google.com/file/d/1U4d9AlGtM8g3eshOWk25JOM9Ode1nWQ0/view?usp=drive_link',
