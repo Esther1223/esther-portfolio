@@ -79,7 +79,7 @@ export const copy = {
       { year: '2023', label: { zh: '進入師大資工', en: 'Started NTNU CS' } },
       { year: '2024', label: { zh: '加入嘉泰興，開始企業系統開發', en: 'Joined JTX and started building internal systems' } },
       { year: '2025', label: { zh: '參與 WMS 與企業官網', en: 'Worked on WMS and the company website' } },
-      { year: '2026', label: { zh: '完成 LMS；啟動自建 HRM；視障與資料庫專題', en: 'Shipped LMS; started HRM; vision and database projects' } },
+      { year: '2026', label: { zh: '完成 LMS；啟動自建 HRM；完成視障與資料庫專題實作', en: 'Shipped LMS; started HRM; completed vision and database projects' } },
       { year: 'Now', label: { zh: 'HRM 持續開發，準備把實作延伸到研究', en: 'HRM in progress; taking systems work toward research' } },
     ],
   },
@@ -143,7 +143,6 @@ export const copy = {
             label: { zh: '資料集與方法', en: 'Dataset and method' },
             items: [
               { zh: '原始影像 1104 張 → 切割後 3312 張（Blocked 2370 / Safe 942）', en: '1,104 raw images → 3,312 cropped patches (Blocked 2,370 / Safe 942)' },
-              { zh: 'ResNet18 · Adam · LR 0.001 · Epoch 40 · Cross Entropy', en: 'ResNet18 · Adam · LR 0.001 · 40 epochs · cross-entropy' },
               { zh: '早期 YOLO + MiDaS 在 Pi 上太慢，改為區域通行分類以提升效率', en: 'Early YOLO + MiDaS was too slow on Pi; we switched to region walkability classification' },
             ],
           },
@@ -231,13 +230,6 @@ export const copy = {
               { zh: '總務處等收費場地：時間 × 時段價格；不滿一小時以一小時計', en: 'Paid venues: hours × slot price; under one hour rounds up to one hour' },
             ],
           },
-          {
-            label: { zh: '設計過程中的調整', en: 'Design changes' },
-            body: {
-              zh: '報告含修改後的 E-R diagram：補上單位開放（allow_aff）、跨時段 group_id、付款狀態，以及 time_slot 以 (room_id, time_slot_id) 複合鍵支援各空間不同時段與價格。',
-              en: 'The report includes a revised E-R diagram: unit access via allow_aff, multi-slot group_id, payment status, and time_slot keyed by (room_id, time_slot_id) so each room can have its own slots and prices.',
-            },
-          },
         ],
         metrics: [],
         figures: [
@@ -308,29 +300,12 @@ export const copy = {
             label: { zh: '分工', en: 'Division of work' },
             items: [
               {
-                zh: '同事（Eric）：標籤列印垂直線——後端 ZPL（套印、旋轉、CJK 點陣、條碼）＋前端編輯器、預覽、產出頁',
-                en: 'Colleague (Eric): the print vertical—backend ZPL (overlay, rotation, CJK bitmap, barcodes) plus frontend editor, preview, and output',
+                zh: '同事：標籤列印垂直線——後端 ZPL（套印、旋轉、CJK 點陣、條碼）＋前端編輯器、預覽、產出頁',
+                en: 'Colleague : the print vertical—backend ZPL (overlay, rotation, CJK bitmap, barcodes) plus frontend editor, preview, and output',
               },
               {
-                zh: '我：匯入／客戶／範本頁、達豐緯創欄位組裝、版面與 Docker；會碰 ZPL，但多半是接資料與畫面，不是列印引擎',
-                en: 'Me: import / customer / template pages, customer-specific field assembly, layout, and Docker; I touch ZPL mostly via data and UI, not the print engine',
-              },
-              {
-                zh: '兩邊都要碰：排版常數、field_bindings 契約、產出前資料組裝',
-                en: 'Shared: layout constants, field_bindings contract, and pre-output data assembly',
-              },
-            ],
-          },
-          {
-            label: { zh: '卡點與解法', en: 'Problems and fixes' },
-            items: [
-              {
-                zh: '卡點：客戶資料來源與格式差異大。解法：依各客戶設定必填、型別、預設值、唯一欄位與複合鍵；寫入前先回饋錯誤位置與原因。',
-                en: 'Problem: sources and formats differ widely. Fix: per-customer required fields, types, defaults, unique fields, and composite keys; report error location and reason before write.',
-              },
-              {
-                zh: '卡點：列印貫穿前後端，不能用前後端切開分工。解法：把列印當垂直線交給同事；我專注匯入、客戶業務鍵與範本權限。',
-                en: 'Problem: printing spans both ends, so a frontend / backend split fails. Fix: treat print as one vertical owned by a colleague; I focus on import, business keys, and template permissions.',
+                zh: '我：匯入／客戶／範本頁、欄位規則組裝、版面與 Docker；會碰 ZPL，但多半是接資料與畫面，不是列印引擎',
+                en: 'Me: import / customer / template pages, field rules assembly, layout, and Docker; I touch ZPL mostly via data and UI, not the print engine',
               },
             ],
           },
@@ -369,8 +344,8 @@ export const copy = {
         name: { zh: '人資管理系統（HRM）', en: 'HR Management System (HRM)' },
         period: { zh: '2026-08 — 現在', en: 'Aug 2026 — Present' },
         lead: {
-          zh: '自建 HRM（出勤＋算薪）：FastAPI + Vue 3 + PostgreSQL + Redis，Flutter 行動端。2026-08-11 起建置，目前仍在開發／維護。Phase 1 已能跑通員工主檔 → 打卡／請假 → 日結 → 計薪關帳 → 薪資單 PDF。',
-          en: 'A self-built HRM for attendance and payroll: FastAPI + Vue 3 + PostgreSQL + Redis, with a Flutter mobile app. Started 2026-08-11 and still in active development. Phase 1 already runs employee master → punch / leave → daily close → payroll close → payslip PDF.',
+          zh: '自建 HRM（出勤＋算薪）：FastAPI + Vue 3 + PostgreSQL + Redis，Flutter 行動端。2026-08-11 起建置，目前仍在開發／維護。已能跑通員工主檔 → 打卡／請假 → 日結 → 計薪關帳 → 薪資單 PDF。',
+          en: 'A self-built HRM for attendance and payroll: FastAPI + Vue 3 + PostgreSQL + Redis, with a Flutter mobile app. Started 2026-08-11 and still in active development. Already runs employee master → punch / leave → daily close → payroll close → payslip PDF.',
         },
         stack: ['FastAPI', 'Vue 3', 'PostgreSQL', 'Redis', 'Flutter', 'Docker'],
         tags: {
@@ -392,7 +367,7 @@ export const copy = {
               { zh: '資料：PostgreSQL；Redis 作日結／算薪 job 佇列', en: 'Data: PostgreSQL; Redis for daily-close / payroll job queues' },
               { zh: '前端：Vue 3 + TypeScript + Vite + Naive UI + Pinia', en: 'Web: Vue 3 + TypeScript + Vite + Naive UI + Pinia' },
               { zh: 'App：Flutter（登入、打卡、裝置綁定、行事曆、請假、補登）', en: 'App: Flutter (login, punch, device bind, calendar, leave, make-up)' },
-              { zh: '其他：Docker Compose；薪資單 PDF（ReportLab）；PII Fernet 加密', en: 'Also: Docker Compose; payslip PDF (ReportLab); PII via Fernet' },
+              { zh: '其他：Docker Compose；薪資單 PDF（ReportLab）', en: 'Also: Docker Compose; payslip PDF (ReportLab)' },
             ],
           },
           {
@@ -408,22 +383,7 @@ export const copy = {
             label: { zh: '時程與階段', en: 'Timeline and phases' },
             items: [
               { zh: '2026-08-11 3 repo 初始化；仍在開發／維護（約一個月）', en: 'Three repos initialized 2026-08-11; still in development (~one month)' },
-              { zh: 'Phase 1（能發薪）已落地：人事、班別、日結、請假、月薪、薪資單 PDF', en: 'Phase 1 (payroll-ready) shipped: personnel, shifts, daily close, leave, monthly pay, payslip PDF' },
-              { zh: 'Phase 2（行動 ESS）部分落地：App 打卡／補登／請假已有；銀行薪轉檔、App 薪資單尚未做', en: 'Phase 2 (mobile ESS) partial: app punch / make-up / leave done; bank transfer file and app payslip not yet' },
-              { zh: '計薪區間：上月 25 日～本月 24 日', en: 'Pay period: 25th of last month → 24th of this month' },
-            ],
-          },
-          {
-            label: { zh: '卡點與解法', en: 'Problems and fixes' },
-            items: [
-              {
-                zh: '卡點：簽核含直屬、部門、上級，且禁止自行審核。解法：組織層級與禁止自審寫進資料結構與流程。',
-                en: 'Problem: multi-level approval plus no self-approve. Fix: encode org hierarchy and the rule in data and workflow.',
-              },
-              {
-                zh: '卡點：GPS、Wi-Fi、場外打卡規則容易散落。解法：各打卡情境對應系統規則與審核流程。',
-                en: 'Problem: GPS, Wi-Fi, and off-site punch rules scatter easily. Fix: map each scenario to system rules and review flows.',
-              },
+              { zh: '已落地：人事、班別、日結、請假、月薪、薪資單 PDF、App 打卡／補登／請假', en: 'Shipped: personnel, shifts, daily close, leave, monthly pay, payslip PDF, app punch / make-up / leave' },
             ],
           },
           {
@@ -509,8 +469,8 @@ export const copy = {
             en: 'LMS: I owned import / customers / templates; a colleague owned the print vertical (ZPL / editor / output).',
           },
           {
-            zh: 'HRM：FastAPI + Vue 3 + PostgreSQL + Redis + Flutter；2026-08 起建置，Phase 1 已能發薪。',
-            en: 'HRM: FastAPI + Vue 3 + PostgreSQL + Redis + Flutter; started Aug 2026, Phase 1 already payroll-ready.',
+            zh: 'HRM：FastAPI + Vue 3 + PostgreSQL + Redis + Flutter',
+            en: 'HRM: FastAPI + Vue 3 + PostgreSQL + Redis + Flutter',
           },
           {
             zh: 'LMS 上線後標籤列印時間至少減少一半。',
